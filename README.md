@@ -52,13 +52,6 @@ s.connect(('localhost',8000))
 while True:
   ip=input("Enter the website you want to ping ")
   s.send(ip.encode()) print(s.recv(1024).decode())
-
-TRANCEROUTE COMMAND
-
-from scapy.all import*
-target = ["www.google.com"]
-result, unans = traceroute(target,maxttl=32)
-print(result,unans)
 ```
 
 
@@ -67,7 +60,6 @@ print(result,unans)
 <img width="920" height="195" alt="image" src="https://github.com/user-attachments/assets/c5fbcd2a-2ce5-47c6-98db-44d389987c48" />
 
 
-<img width="876" height="374" alt="image" src="https://github.com/user-attachments/assets/5163521f-e169-44fd-9417-19a591080f09" />
 
 ## Result
 Thus Execution of Network commands Performed 
